@@ -33,7 +33,7 @@ Do some data science.
 `@sample_code`
 
 ```{sql}
-
+SELECT * FROM
 ```
 
 
@@ -51,3 +51,15 @@ Do some data science.
 ```
 
 
+---
+
+## Insert exercise title here
+
+```yaml
+type: VideoExercise 
+xp: 50 
+key: ba54eb3e52   
+```
+
+`@projector_key`
+1c1e526409e0f865faeabdff8c9fba19
