@@ -33,20 +33,26 @@ key: "ab1763b23d"
 `@part1`
 What you have learned:
 
-- Concept of relational databases and SQL tables
-- Basic SQL query using 
+- Basic understanding of relational database components such as tables, column, rows and keys
 
- ``SELECT <Field Names> FROM <Table Name>``
+- Basic SQL query using 3 keywords 
+SELECT...FROM...WHERE
 
- ``SELECT * FROM Sales``
+ ``SELECT <Field Names> FROM <Table Name> WHERE <Condition>``
 
- ``SELECT Year, Publisher, Revenue FROM Sales``
+ ``SELECT * FROM Sales WHERE Year = 2006`` 
+
+ ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006``
 
 
 `@script`
-The first case study was exploring Video Game Sales database. You have learned the 3 key SQL functions
+In the first case study, we used Video Game Sales database. You learned about the basic understanding of relational database components such as tables, column, rows and keys
 
-- SELECT
+Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
+
+You have learned the 3 important SQL keywords to form a basic SQL statement
+
+- SELECT.... FROM.....WHERE
 
 
 ---
