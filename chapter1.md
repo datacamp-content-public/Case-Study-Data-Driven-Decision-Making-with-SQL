@@ -53,7 +53,7 @@ SELECT * FROM
 
 ---
 
-## Insert exercise title here
+## Case Study: Data Driven Decision Making with SQL
 
 ```yaml
 type: VideoExercise 
