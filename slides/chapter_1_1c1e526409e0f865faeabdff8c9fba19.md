@@ -33,7 +33,7 @@ key: "ab1763b23d"
 `@part1`
 What you have learned:
 
-- SQL jargons 
+- Concept of relational databases and SQL tables
 - Basic SQL query using 
 
  ``SELECT <Field Names> FROM <Table Name>``
@@ -42,13 +42,36 @@ What you have learned:
 
  ``SELECT Year, Publisher, Revenue FROM Sales``
 
-> ``select
-
 
 `@script`
 The first case study was exploring Video Game Sales database. You have learned the 3 key SQL functions
 
 - SELECT
+
+
+---
+## Video Game Sales (2)
+
+```yaml
+type: "TwoRowsWideTop"
+key: "775ea76987"
+disable_transition: false
+```
+
+`@part1`
+Further
+
+
+`@part2`
+More
+
+
+`@part3`
+Tips
+
+
+`@script`
+
 
 
 ---
@@ -60,11 +83,22 @@ key: "f73afe007d"
 ```
 
 `@part1`
+You learned how to:
 
+- Use SELECT DISTINCT statement
+- Apply ORDER BY to sort result set 
+
+- Include / exclude missing values by applying IS NULL and IS NOT NULL 
+
+- Filter rows using AND, OR, and NOT operators 
+
+- Apply Pattern matching with LIKE, wildcard (%) and IN operators
+
+- Calculate columns using CASE WHEN
 
 
 `@part2`
-
+Screen
 
 
 `@part3`
@@ -72,7 +106,9 @@ key: "f73afe007d"
 
 
 `@script`
-
+For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School professors Ray Fisman and Sheena Iyengar for their paper Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment. You learned how to 
+ 
+SELECT DISTINCT is used to return only distinct (different) values.
 
 
 ---
@@ -84,7 +120,11 @@ key: "91a89ca986"
 ```
 
 `@part1`
+You learned:
 
+- Difference types of JOINS
+
+- Combining result sets with UNION and UNION ALL
 
 
 `@part2`
