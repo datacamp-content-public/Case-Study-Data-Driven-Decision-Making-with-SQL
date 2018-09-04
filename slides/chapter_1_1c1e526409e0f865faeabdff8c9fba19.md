@@ -23,11 +23,11 @@ Now let's summarise what you have learned in this course.
 
 
 ---
-## Video Game Sales
+## Video Game Sales - Basic SQL query
 
 ```yaml
-type: "FullCodeSlide"
-key: "ab1763b23d"
+type: "TwoRowsWideBottom"
+key: "d7b537ab21"
 ```
 
 `@part1`
@@ -38,42 +38,47 @@ What you have learned:
 - Basic SQL query using 3 keywords 
 SELECT...FROM...WHERE
 
- ``SELECT <Field Names> FROM <Table Name> WHERE <Condition>``
 
- ``SELECT * FROM Sales WHERE Year = 2006`` 
+`@part2`
+INSERT TABLE SCREENSHOT
+
+
+`@part3`
+Sample
+
+``SELECT * FROM Sales WHERE Year = 2006`` 
 
  ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006``
 
 
 `@script`
-In the first case study, we used Video Game Sales database. You learned about the basic understanding of relational database components such as tables, column, rows and keys
 
-Relational databases organise data into “tables” consisting of rows and columns. Each column in a database has a specific data type text, number, date and so on. 
-
-You have learned the 3 important SQL keywords to form a basic SQL statement
-
-- SELECT.... FROM.....WHERE
 
 
 ---
-## Video Game Sales (2)
+## Video Game Sales - Summarising data
 
 ```yaml
-type: "TwoRowsWideTop"
-key: "775ea76987"
-disable_transition: false
+type: "TwoRowsWideBottom"
+key: "72edb8fdcd"
 ```
 
 `@part1`
-Further
+- Aggregating data using SUM, AVERAGE, MIN and MAX
+
+- Sorting data using ORDER BY
+
+- Difference between WHERE and  HAVING when applying conditions in a SQL statement
 
 
 `@part2`
-More
+INSERT PICTURE
 
 
 `@part3`
-Tips
+- ``SUM`` Total sales by product category
+- ``AVG`` Average sales by product category
+- ``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit
 
 
 `@script`
