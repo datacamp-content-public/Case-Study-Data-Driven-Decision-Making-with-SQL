@@ -17,7 +17,7 @@ title: Data and Intelligence Specialist / Data Scientist
 
 
 `@script`
-Congratulations! You have completed the final case study in this course on data driven decision making using SQL.
+Congratulations! You have completed the final case study in this course on data driven decision making with SQL.
 
 Now let's summarise what you have learned in this course.
 
@@ -52,7 +52,13 @@ Sample
 
 
 `@script`
+The first case study was querying  the Sales table in the Video Games Sales database. Your job was to be able to analyse sales trend as well as to summarise sales by regions group by publisher and year.
 
+You learned: 
+
+Basic understanding of relational database components such as tables, column, rows and keys
+
+Then, you learned to apply SELECT...FROM...WHERE statement to initially explore the data.
 
 
 ---
