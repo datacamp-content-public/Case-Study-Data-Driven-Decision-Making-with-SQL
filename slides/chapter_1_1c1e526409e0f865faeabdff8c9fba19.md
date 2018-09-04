@@ -115,13 +115,16 @@ You learned how to:
 `@part2`
 Code Samples
 
-``SELECT DISTINCT Genre FROM Sales``
+``SELECT DISTINCT career FROM SpDates``
 
-``SELECT Rank, Publisher, Genre, Year FROM Sales ORDER BY Rank``
+``SELECT * FROM SpDates ORDER BY age``
 
-``SELECT * FROM Sales WHERE Genre IS NULL``
+``SELECT * FROM SpDates WHERE race IS NULL``
 
-``SELECT * FROM Sales WHERE Name LIKE '%Mario%' AND Year in (1988, 1989)``
+``SELECT * FROM SpDates WHERE career LIKE '%Data%' AND age in (30,31,32,33,34,35)``
+
+``SELECT gender, CASE WHEN score > 10 THEN 'Good' ELSE 'Not a good match' END AS result
+ FROM SpDates``
 
 
 `@part3`
