@@ -70,9 +70,7 @@ key: "72edb8fdcd"
 ```
 
 `@part1`
-- Aggregating data using SUM, AVERAGE, MIN and MAX
-
-- Sorting data using ORDER BY
+- Summarising data using SUM, AVERAGE, MIN and MAX
 
 - Difference between WHERE and  HAVING when applying conditions in a SQL statement
 
@@ -88,7 +86,7 @@ INSERT PICTURE
 
 
 `@script`
-
+After retrieving records from a table, you learned to applying aggregated SQL functions to summarise data.
 
 
 ---
@@ -105,7 +103,7 @@ You learned how to:
 - Use SELECT DISTINCT statement
 - Apply ORDER BY to sort result set 
 
-- Include / exclude missing values by applying IS NULL and IS NOT NULL 
+- Include / exclude missing values by applying IS NULL 
 
 - Filter rows using AND, OR, and NOT operators 
 
@@ -115,7 +113,15 @@ You learned how to:
 
 
 `@part2`
-Screen
+Code Samples
+
+``SELECT DISTINCT Genre FROM Sales``
+
+``SELECT Rank, Publisher, Genre, Year FROM Sales ORDER BY Rank``
+
+``SELECT * FROM Sales WHERE Genre IS NULL``
+
+``SELECT * FROM Sales WHERE Name LIKE '%Mario%' AND Year in (1988, 1989)``
 
 
 `@part3`
@@ -181,7 +187,31 @@ key: "1fecb85d6d"
 
 
 ---
-## Final Slide
+## Tips & Best Practise
+
+```yaml
+type: "FullCodeSlide"
+key: "98312c63bc"
+```
+
+`@part1`
+- Capitalise SQL keywords
+
+  ``SELECT * FROM sales``
+
+- Use Alias
+
+- Avoid SELECT ALL statement if possible
+
+
+`@script`
+Although by not following these following tips may not break your code however its a good practise. Once you become the expert, which I think by the end of this course you will definitely are, you will get into the habit of writing SQL codes which is useful when working in a collaborative environment so that it is easy for your colleagues to pick up where you left off!
+
+First, as previously mentioned, in some SQL environments it is not case sensitive, writing the code in lowercase or uppercase will not result in error however it makes the distinction between SQL keywords and non SQL keywords.
+
+
+---
+## Hope you enjoy the course!
 
 ```yaml
 type: "FinalSlide"
