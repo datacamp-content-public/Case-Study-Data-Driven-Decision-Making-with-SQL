@@ -90,15 +90,16 @@ _What’s the average sales?_ {{3}}
 
 
 `@script`
-Furthermore you explored the use case of summarising data using aggregated functions such as SUM and AVG
+Furthermore you explored the use case of summarising data using aggregated functions such as SUM and AVG.
 
-Then you learned about difference between WHERE clause and HAVING clause when applying conditions in a SQL statement {{2}}
+Then you learned about differences between WHERE clause and HAVING clause when applying conditions in a SQL statement. 
+
 The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregated functions.
 
 You were able to answer key questions like 
 
-What’s the total sales to date.
-What’s the average sales?
+What’s the total sales to date?
+What’s the average sales overall?
 
 
 ---
@@ -139,15 +140,15 @@ Code Samples {{2}}
 
 
 `@script`
-For the second case study, we talked Evidence from a Speed Dating Experiment database published on Kaggle which was compiled by Columbia Business School.
+For the second case study, we talked about Evidence from a Speed Dating Experiment database published on the Kaggle website which was compiled by Columbia Business School.
  
 You applied the use of SELECT DISTINCT to return only distinct (different) values.
 
 Later, you learned to apply keyword ORDER BY to sort result set - as per the sample here.
 
-In general, if dataset contains a lot of incomplete records, it will not be useful therefore IS NULL can be used to quantify number of rows with missing data.
+In general, if dataset contains a lot of incomplete records, it will not be useful therefore IS NULL keyword can be used to quantify number of rows with missing data.
 
-Finally, you applied calculated columns using CASE WHEN to evaluate conditions, very similar to IF...ELSE
+Finally, you applied calculated columns using CASE WHEN to evaluate conditions, this is very similar to IF statement if you are familiar with spreadsheet formula.
 
 
 ---
