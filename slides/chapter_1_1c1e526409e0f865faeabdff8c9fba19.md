@@ -94,7 +94,7 @@ You practised your knowledge on SELECT statements and putting summarising functi
 
 The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
 
-The functions showed on the right were used to summarize numeric type of columns.
+The functions showed on the right were used to summarise numeric type of columns.
 
 You were able to answer key questions like what’s the total sales to date.
 
@@ -141,11 +141,11 @@ For the second case study, we talked about love....or was it attraction? Using a
 
 What you have learned to:
  
-SELECT DISTINCT is used to return only distinct (different) values.
+Applying the use of SELECT DISTINCT to return only distinct (different) values.
 
 Later, you learned to apply keyword ORDER BY to sort result set - as per the sample here.
 
-In general, if dataset contains a lot of incomplete records, it will not be useful for meaningful analyse. You learned to use IS NULL to include / exclude missing values
+In general, if dataset contains a lot of incomplete records, it will not be useful for meaningful analysis. You learned to use IS NULL to include / exclude missing values
 
 Finally, we applied the use of CASE WHEN to evaluate conditions, very similar to IF...ELSE
 
@@ -233,7 +233,7 @@ First,
 
 Use INNER JOIN when you need only rows that match on both side
 
-You have examined the sample code right here which would give you the result set as per the screenshot here. Noticed that the INNER JOIN returned two rows that shared the common key "staffed" as highlighted in yellow.
+You have examined the sample code right here which would give you the result set as per the screenshot here. Noticed that the INNER JOIN returned two rows that shared the common key "staffid" as highlighted in yellow.
 
 
 ---
@@ -263,7 +263,7 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 `@script`
-Next, you have learned the use case of LEFT JOIN to get optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the LEFT JOIN returned four rows from the left table and showed the information from the right table where common key were shared - which was "staffed" as highlighted in yellow.
+Next, you have learned the use case of LEFT JOIN to get optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the LEFT JOIN returned four rows from the left table and showed the information from the right table where common key were shared - which was "staffid" as highlighted in yellow.
 
 
 ---
@@ -289,103 +289,69 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 `@script`
-The same goes with RIGHT JOIN, it gave the optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the RIGHT JOIN returned four rows from the right table and showed the information from the left table where common key were shared - which was "staffed" as highlighted in yellow.
+The same goes with RIGHT JOIN, it gave the optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the RIGHT JOIN returned four rows from the right table and showed the information from the left table where common key were shared - which was "staffid" as highlighted in yellow.
 
 
 ---
 ## How happy are you at work today?
 
 ```yaml
-type: "TwoRowsWideTop"
-key: "7bdfcbd6f0"
+type: "TwoRows"
+key: "f9562f5ae0"
 ```
 
 `@part1`
-Summarising
+Explored the database to answer following questions; {{1}}
+
+- When is the happiest day to be at work? {{2}}
+
+``SELECT date.dayofweek, SUM(votes.likes) AS allvotes FROM dates INNER JOIN votes WHERE votes.date = dates.date GROUP BY date.dayofweek``  {{3}}
+ 
+- How many negative votes before they get fired? {{6}}
+
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1`` {{7}}
 
 
 `@part2`
-`SELECT * FROM churn INNER JOIN comments`
-
-
-`@part3`
 
 
 
 `@script`
-Finally, at the end of the third chapter you would be able to following questions:
+You discovered that the database could answer the following questions
 
 
 ---
-## Analysis of Refugee Crisis
+## Analysis of Refugee Crisis - Applying advanced SQL
 
 ```yaml
-type: "TwoRowsWideTop"
-key: "1fecb85d6d"
+type: "TwoRows"
+key: "aec538773d"
 ```
 
 `@part1`
-What you have learned: {{1}}
+The final case study was about analysis of refugee crisis
+
+What you have learned: 
+
+- Putting it all together from previous chapters
+
+- Applying tips & best practise
+
+- Capitalise SQL keywords
+
+  ``SELECT * FROM sales``
+
+- Use Alias for table name and / or column names
+
+- Avoid SELECT ALL statement if possible
 
 
 `@part2`
-
-
-
-`@part3`
 
 
 
 `@script`
 The final case study was about Refugee Crisis Analysis - this chapter enabled you to choose practise different SQL syntax and functions learned from previous 3 chapters.
-
-
----
-## Insert title here...
-
-```yaml
-type: "TwoRowsWideTop"
-key: "abf3ab8cec"
-```
-
-`@part1`
-
-
-
-`@part2`
-
-
-
-`@part3`
-
-
-
-`@script`
-
-
-
----
-## Tips & Best Practise
-
-```yaml
-type: "FullCodeSlide"
-key: "98312c63bc"
-```
-
-`@part1`
-- Capitalise SQL keywords
-
-  ``SELECT * FROM sales``
-
-- Use Alias
-
-- Avoid SELECT ALL statement if possible
-
-
-`@script`
-Although by not following these following tips may not break your code however its a good practise. Once you become the expert, which I think by the end of this course you will definitely are, you will get into the habit of writing SQL codes which is useful when working in a collaborative environment so that it is easy for your colleagues to pick up where you left off!
-
-First, as previously mentioned, in some SQL environments it is not case sensitive, writing the code in lowercase or uppercase will not result in error however it makes the distinction between SQL keywords and non SQL keywords.
 
 
 ---
