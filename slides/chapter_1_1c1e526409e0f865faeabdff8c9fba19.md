@@ -208,12 +208,18 @@ Let’s review our data scheme here
 ## Insert title here...
 
 ```yaml
-type: "FullImageSlide"
-key: "83cab8043f"
+type: "TwoColumns"
+key: "ea5947d507"
 ```
 
 `@part1`
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrpigK7fd4MaXQqBGH3Van_CtRsbuUSHI3ibGftmQy4yQOu1d)
+LEFT JOIN 
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true)
+
+
+`@part2`
+INNER JOIN
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true)
 
 
 `@script`
@@ -221,7 +227,7 @@ key: "83cab8043f"
 
 
 ---
-## How happy are you at work today? 
+## How happy are you at work today?
 
 ```yaml
 type: "TwoRowsWideTop"
