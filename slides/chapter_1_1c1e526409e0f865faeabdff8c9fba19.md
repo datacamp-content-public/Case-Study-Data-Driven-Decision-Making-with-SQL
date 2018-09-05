@@ -33,7 +33,7 @@ key: "d7b537ab21"
 `@part1`
 What you have learned: {{1}}
 
-- Basic understanding of relational database components such as tables, column, rows and keys {{2}}
+- Basic understanding of relational database components such as tables, columns, rows and keys {{2}}
 - Basic SQL query using 3 keywords SELECT...FROM...WHERE {{3}}
 
 
@@ -50,13 +50,15 @@ Sample SQL Queries {{5}}
 
 
 `@script`
-The first case study you built your first SQL query using Video Games Sales database. Your job was to accessing and interrogating the Sales table within the database. Your job was to analyse sales trend.
+In the first case study, you built your first SQL query using Video Games Sales database. Your job was to accessing and interrogating data from the Sales table. Your aim was to analyse sales trend.
 
-You learned: 
+What you have learned:
 
 Basic understanding of relational database components such as tables, columns, rows and keys
 
-Then, you learned to apply SELECT...FROM...WHERE statement to initially explore the data in the table.
+Then, you learned to apply SELECT...FROM...WHERE statement which is a basis of a simple SQL query to initially explore the data in the table.
+
+You were able to answer a question  "What video games sold in year 2006 worldwide?" by using these sample queries here.
 
 
 ---
@@ -76,19 +78,21 @@ What you have learned: {{1}}
 
 
 `@part2`
-> What’s the total sales? {{3}}
+_What’s the total sales?_ {{3}}
 
-> What’s the average sales? {{3}}
+``SELECT SUM(Global_Sales) AS TotalSales from Sales``{{4}}
 
 
 `@part3`
-- ``SELECT SUM(Global_Sales) AS TotalSales from Sales``{{4}}
-- ``SELECT AVG(Global_Sales) AS AvgSales from Sales`` {{5}}
-- ``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit {{6}}
+_What’s the average sales?_ {{3}}
+
+``SELECT AVG(Global_Sales) AS AvgSales from Sales`` {{5}}
+
+``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit {{6}}
 
 
 `@script`
-You continued to practise your knowledge on SELECT statements and putting summarising functions. Furthermore we explored the use case of WHERE clause and HAVING. 
+You practised your knowledge on SELECT statements and putting summarising functions. Furthermore we explored the use case of WHERE clause and HAVING. 
 
 The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
 
@@ -106,7 +110,7 @@ key: "f73afe007d"
 ```
 
 `@part1`
-You learned how to:
+What you have learned: {{1}}
 
 - Use SELECT DISTINCT statement
 - Apply ORDER BY to sort result set 
@@ -154,7 +158,7 @@ key: "91a89ca986"
 ```
 
 `@part1`
-You learned: {{1}}
+What you have learned: {{1}}
 
 - Difference types of JOINS {{2}}
 
@@ -174,6 +178,8 @@ You learned: {{1}}
 `@script`
 In the previous 2 case studies you had practice your skill on applying Select statement and aggregating data. In the 3rd case study you have learned about querying multiple tables thru the use of JOIN which is bread and butter of using SQL to accessing relational databases.
 
+This third case study was about database that record daily happiness levels at work as used by myhappyforce.com app. You learned the concept of relational database which is bread and butter of SQL.
+
 Let’s review our data scheme here
 
 
@@ -186,7 +192,7 @@ key: "1fecb85d6d"
 ```
 
 `@part1`
-
+What you have learned: {{1}}
 
 
 `@part2`
@@ -198,7 +204,7 @@ key: "1fecb85d6d"
 
 
 `@script`
-
+The final case study was about Refugee Crisis Analysis - this chapter enabled you to choose practise different SQL syntax and functions learned from previous 3 chapters.
 
 
 ---
