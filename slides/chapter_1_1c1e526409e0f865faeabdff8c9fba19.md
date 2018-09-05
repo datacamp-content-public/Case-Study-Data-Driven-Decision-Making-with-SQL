@@ -211,17 +211,55 @@ Let’s review our data scheme here
 
 ```yaml
 type: "TwoColumns"
-key: "ea5947d507"
+key: "616164b2a4"
 ```
 
 `@part1`
-LEFT JOIN 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true)
+- Use LEFT JOIN to get optional values from another table(s)
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true) {{3}}
 
 
 `@part2`
-INNER JOIN
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true)
+**Sample code ** 
+
+For LEFT JOIN
+
+``SELECT dept.staffid, dept.office, workers.gender, workers.age 
+FROM workers INNER JOIN dept on workers.staffid 
+= dept.staffid`` 
+
+For RIGHT JOIN
+
+``SELECT dept.staffid, dept.office, workers.gender, workers.age 
+FROM workers INNER JOIN dept on workers.staffid 
+= dept.staffid``
+
+
+`@script`
+
+
+
+---
+## Insert title here...
+
+```yaml
+type: "TwoColumns"
+key: "a02b6e3813"
+```
+
+`@part1`
+- Same with RIGHT JOIN
+
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true) {{3}}
+
+
+`@part2`
+**Sample code ** 
+
+``SELECT dept.staffid, dept.office, workers.gender, workers.age 
+FROM workers INNER JOIN dept on workers.staffid 
+= dept.staffid``
 
 
 `@script`
