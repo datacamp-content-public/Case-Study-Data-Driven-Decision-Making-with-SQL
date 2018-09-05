@@ -137,15 +137,21 @@ Code Samples {{2}}
 
 
 `@script`
-For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School professors Ray Fisman and Sheena Iyengar for their paper Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment. You learned how to 
+For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School professors Ray Fisman and Sheena Iyengar for their paper Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment. 
+
+What you have learned to:
  
 SELECT DISTINCT is used to return only distinct (different) values.
 
-So you discovered that there was a specific pattern demographic profile in this experiment?
+Later, you learned to apply keyword ORDER BY to sort result set - as per the sample here.
+
+In general, if dataset contains a lot of incomplete records, it will not be useful for meaningful analyse. You learned to use IS NULL to include / exclude missing values
+
+Finally, we applied the use of CASE WHEN to evaluate conditions, very similar to IF...ELSE
 
 
 ---
-## Are you date-able?
+## Must be love at first sight?
 
 ```yaml
 type: "TwoRowsWideBottom"
@@ -163,7 +169,7 @@ Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
 ``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' order by age`` {{5}}
  
-- Was the result successful (perfect matched!)? {{6}}
+- How many would like to see their date again? {{6}}
 
 ``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1`` {{7}}
 
@@ -177,7 +183,7 @@ Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
 
 `@script`
-
+So, after exploring the table,
 
 
 ---
