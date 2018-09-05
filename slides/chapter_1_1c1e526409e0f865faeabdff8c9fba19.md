@@ -31,28 +31,26 @@ key: "d7b537ab21"
 ```
 
 `@part1`
-What you have learned:
+What you have learned: {{1}}
 
-- Basic understanding of relational database components such as tables, column, rows and keys
-
-- Basic SQL query using 3 keywords 
-SELECT...FROM...WHERE
+- Basic understanding of relational database components such as tables, column, rows and keys {{2}}
+- Basic SQL query using 3 keywords SELECT...FROM...WHERE {{3}}
 
 
 `@part2`
-INSERT TABLE SCREENSHOT
+What video games sold in year 2006 worldwide? {{4}}
 
 
 `@part3`
-Sample
+Sample {{5}}
 
-``SELECT * FROM Sales WHERE Year = 2006`` 
+``SELECT * FROM Sales WHERE Year = 2006`` {{6}}
 
- ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006``
+ ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006`` {{7}}
 
 
 `@script`
-The first case study was querying  the Sales table in the Video Games Sales database. Your job was to be able to analyse sales trend as well as to summarise sales by regions group by publisher and year.
+The first case study was to interrogate the Sales table in the Video Games Sales database. Your job was to analyse sales trend as well as to summarise sales by regions group by publisher and year.
 
 You learned: 
 
@@ -70,23 +68,27 @@ key: "72edb8fdcd"
 ```
 
 `@part1`
-- Summarising data using SUM, AVERAGE, MIN and MAX
+- Summarising data using SUM, AVERAGE, MIN and MAX {{1}}
 
-- Difference between WHERE and  HAVING when applying conditions in a SQL statement
+- Difference between WHERE and  HAVING when applying conditions in a SQL statement {{2}}
 
 
 `@part2`
-INSERT PICTURE
+> What’s the total sales? {{3}}
 
 
 `@part3`
-- ``SUM`` Total sales by product category
-- ``AVG`` Average sales by product category
-- ``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit
+- ``SUM`` Total sales by product category {{4}}
+- ``AVG`` Average sales by product category {{5}}
+- ``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit {{6}}
 
 
 `@script`
-After retrieving records from a table, you learned to applying aggregated SQL functions to summarise data.
+Now that you learned about building a basic SQL SELECT statement, you found a way to improve this query by applying aggregated functions
+
+The functions showed on the right were used to summarize numeric type of columns.
+
+You were able to answer key questions like what’s the total sales to date.
 
 
 ---
