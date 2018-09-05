@@ -223,11 +223,15 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 `@script`
-In the previous 2 case studies you had practice your skill on applying Select statement and aggregating data. In the 3rd case study you have learned about querying multiple tables thru the use of JOIN which is bread and butter of using SQL to accessing relational databases.
+The third case study we worked on a database about happiness levels at work as used by myhappyforce.com app. Joining multiple tables thru the use of JOIN is the bread and butter of using SQL with relational databases. This topic warrants a whole course in itself, there is a Joining data with PostgresSQL on DataCamp if you wish to deep dive into the subject.
 
-This third case study was about database that record daily happiness levels at work as used by myhappyforce.com app. You learned the concept of relational database which is bread and butter of SQL.
+So in this chapter you have learned
 
-Let’s review our data scheme here
+- Concept of JOIN clause, it is used to combine rows from two or more tables, based on a related column between them. There are many types of joins
+
+First,
+
+Use INNER JOIN when you need only rows that match on both side
 
 
 ---
