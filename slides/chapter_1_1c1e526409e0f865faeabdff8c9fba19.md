@@ -145,7 +145,7 @@ So you discovered that there was a specific pattern demographic profile in this 
 
 
 ---
-## Speed Dating Experiment - Am I dateable?
+## Am I date-able?
 
 ```yaml
 type: "TwoRowsWideBottom"
@@ -179,11 +179,13 @@ key: "91a89ca986"
 `@part1`
 What you have learned: {{1}}
 
-- Difference types of JOINS {{2}}
+- A JOIN clause is used to combine rows from two or more tables, based on a related column between them {{2}}
 
-- Combining result sets with UNION and UNION ALL {{3}}
+- Difference types of JOINS - INNER JOIN, LEFT JOIN, RIGHT JOIN and so on {{3}}
 
-- JOIN vs UNION {{4}}
+- Combining result sets with UNION and UNION ALL {{4}}
+
+- JOIN vs UNION {{5}}
 
 
 `@part2`
@@ -200,6 +202,46 @@ In the previous 2 case studies you had practice your skill on applying Select st
 This third case study was about database that record daily happiness levels at work as used by myhappyforce.com app. You learned the concept of relational database which is bread and butter of SQL.
 
 Let’s review our data scheme here
+
+
+---
+## Insert title here...
+
+```yaml
+type: "FullImageSlide"
+key: "83cab8043f"
+```
+
+`@part1`
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkrpigK7fd4MaXQqBGH3Van_CtRsbuUSHI3ibGftmQy4yQOu1d)
+
+
+`@script`
+
+
+
+---
+## How happy are you at work today? 
+
+```yaml
+type: "TwoRowsWideTop"
+key: "7bdfcbd6f0"
+```
+
+`@part1`
+Summarising
+
+
+`@part2`
+SELECT * FROM churn INNER JOIN comments
+
+
+`@part3`
+
+
+
+`@script`
+
 
 
 ---
@@ -224,6 +266,30 @@ What you have learned: {{1}}
 
 `@script`
 The final case study was about Refugee Crisis Analysis - this chapter enabled you to choose practise different SQL syntax and functions learned from previous 3 chapters.
+
+
+---
+## Insert title here...
+
+```yaml
+type: "TwoRowsWideTop"
+key: "abf3ab8cec"
+```
+
+`@part1`
+
+
+
+`@part2`
+
+
+
+`@part3`
+
+
+
+`@script`
+
 
 
 ---
