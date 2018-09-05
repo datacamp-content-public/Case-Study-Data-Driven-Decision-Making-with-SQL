@@ -93,8 +93,7 @@ _What’s the average sales?_ {{3}}
 Furthermore you explored the use case of summarising data using aggregated functions such as SUM and AVG
 
 Then you learned about difference between WHERE clause and HAVING clause when applying conditions in a SQL statement {{2}}
-T
-he HAVING clause was added to SQL because the WHERE keyword could not be used with aggregated functions.
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregated functions.
 
 You were able to answer key questions like 
 
@@ -140,17 +139,15 @@ Code Samples {{2}}
 
 
 `@script`
-For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School called Evidence From a Speed Dating Experiment. 
-
-What you have learned:
+For the second case study, we talked Evidence from a Speed Dating Experiment database published on Kaggle which was compiled by Columbia Business School.
  
-Applying the use of SELECT DISTINCT to return only distinct (different) values.
+You applied the use of SELECT DISTINCT to return only distinct (different) values.
 
 Later, you learned to apply keyword ORDER BY to sort result set - as per the sample here.
 
-In general, if dataset contains a lot of incomplete records, it will not be useful for meaningful analysis. You learned to use IS NULL to include / exclude missing values
+In general, if dataset contains a lot of incomplete records, it will not be useful therefore IS NULL can be used to quantify number of rows with missing data.
 
-Finally, we applied the use of CASE WHEN to evaluate conditions, very similar to IF...ELSE
+Finally, you applied calculated columns using CASE WHEN to evaluate conditions, very similar to IF...ELSE
 
 
 ---
@@ -186,7 +183,7 @@ Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
 
 `@script`
-So, Exploring ``SpDates`` table in the database to answer following questions;
+You were able to answer following questions;
 
 How many scientist profession are there in the speed dating experiment?
 
@@ -338,11 +335,9 @@ key: "aec538773d"
 `@part1`
 The final case study was about analysis of refugee crisis
 
-What you have learned: 
+In this chapter:
 
-- Putting it all together from previous chapters
-
-- Applying tips & best practise
+- Practise on skills learned from previous 3 chapters
 
 - Capitalise SQL keywords
 
@@ -358,7 +353,9 @@ What you have learned:
 
 
 `@script`
-The final case study was about Refugee Crisis Analysis - this chapter enabled you to choose practise different SQL syntax and functions learned from previous 3 chapters.
+The final case study was about Refugee Crisis Analysis - this chapter you practised different SQL syntax and functions learned from previous 3 chapters with tips and techniques here.
+
+Awesome! You are on your way to be the expert in writing SQL and keep practising!
 
 
 ---
