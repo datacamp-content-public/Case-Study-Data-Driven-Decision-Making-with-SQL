@@ -148,11 +148,13 @@ key: "91a89ca986"
 ```
 
 `@part1`
-You learned:
+You learned: {{1}}
 
-- Difference types of JOINS
+- Difference types of JOINS {{2}}
 
-- Combining result sets with UNION and UNION ALL
+- Combining result sets with UNION and UNION ALL {{3}}
+
+- JOIN vs UNION {{4}}
 
 
 `@part2`
@@ -164,7 +166,9 @@ You learned:
 
 
 `@script`
+In the previous 2 case studies you had practice your skill on applying Select statement and aggregating data. In the 3rd case study you have learned about querying multiple tables thru the use of JOIN which is bread and butter of using SQL to accessing relational databases.
 
+Let’s review our data scheme here
 
 
 ---
