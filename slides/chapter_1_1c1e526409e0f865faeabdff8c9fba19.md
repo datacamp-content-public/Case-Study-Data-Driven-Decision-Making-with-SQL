@@ -233,6 +233,8 @@ First,
 
 Use INNER JOIN when you need only rows that match on both side
 
+You have examined the sample code right here which would give you the result set as per the screenshot here. Noticed that the INNER JOIN returned two rows that shared the common key "staffed" as highlighted in yellow.
+
 
 ---
 ## Daily Happiness & Employee Turnover - LEFT JOIN
@@ -243,6 +245,8 @@ key: "616164b2a4"
 ```
 
 `@part1`
+What you have learned: 
+
 - Use LEFT JOIN to get optional values from another table(s)
 
 ![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true) {{3}}
@@ -255,17 +259,11 @@ For LEFT JOIN
 
 ``SELECT dept.staffid, dept.office, workers.gender, workers.age 
 FROM workers INNER JOIN dept on workers.staffid 
-= dept.staffid`` 
-
-For RIGHT JOIN
-
-``SELECT dept.staffid, dept.office, workers.gender, workers.age 
-FROM workers INNER JOIN dept on workers.staffid 
 = dept.staffid``
 
 
 `@script`
-
+Next, you have learned the use case of LEFT JOIN to get optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the LEFT JOIN returned four rows from the left table and showed the information from the right table where common key were shared - which was "staffed" as highlighted in yellow.
 
 
 ---
@@ -291,7 +289,7 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 `@script`
-Many more JOINS
+The same goes with RIGHT JOIN, it gave the optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the RIGHT JOIN returned four rows from the right table and showed the information from the left table where common key were shared - which was "staffed" as highlighted in yellow.
 
 
 ---
@@ -307,7 +305,7 @@ Summarising
 
 
 `@part2`
-SELECT * FROM churn INNER JOIN comments
+`SELECT * FROM churn INNER JOIN comments`
 
 
 `@part3`
@@ -315,7 +313,7 @@ SELECT * FROM churn INNER JOIN comments
 
 
 `@script`
-
+Finally, at the end of the third chapter you would be able to following questions:
 
 
 ---
