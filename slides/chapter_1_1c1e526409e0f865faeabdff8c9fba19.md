@@ -88,8 +88,6 @@ _What’s the average sales?_ {{3}}
 
 ``SELECT AVG(Global_Sales) AS AvgSales from Sales`` {{5}}
 
-``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit {{6}}
-
 
 `@script`
 You practised your knowledge on SELECT statements and putting summarising functions. Furthermore we explored the use case of WHERE clause and HAVING. 
@@ -102,7 +100,7 @@ You were able to answer key questions like what’s the total sales to date.
 
 
 ---
-## Speed Dating Experiment
+## Speed Dating Experiment - beyond SELECT statement
 
 ```yaml
 type: "TwoRowsWideTop"
@@ -112,31 +110,26 @@ key: "f73afe007d"
 `@part1`
 What you have learned: {{1}}
 
-- Use SELECT DISTINCT statement
-- Apply ORDER BY to sort result set 
+- Use SELECT DISTINCT statement {{2}}
 
-- Include / exclude missing values by applying IS NULL 
+- Apply ORDER BY to sort result set {{3}}
 
-- Filter rows using AND, OR, and NOT operators 
+- Include / exclude missing values by applying IS NULL {{4}}
 
-- Apply Pattern matching with LIKE, wildcard (%) and IN operators
-
-- Calculate columns using CASE WHEN
+- Calculate columns using CASE WHEN {{5}}
 
 
 `@part2`
-Code Samples
+Code Samples {{2}}
 
-``SELECT DISTINCT career FROM SpDates``
+``SELECT DISTINCT career FROM SpDates`` {{2}}
 
-``SELECT * FROM SpDates ORDER BY age``
+``SELECT career, age, score FROM SpDates ORDER BY age`` {{3}}
 
-``SELECT * FROM SpDates WHERE race IS NULL``
+``SELECT * FROM SpDates WHERE race IS NULL`` {{4}}
 
-``SELECT * FROM SpDates WHERE career LIKE '%Data%' AND age in (30,31,32,33,34,35)``
 
-``SELECT gender, CASE WHEN score > 10 THEN 'Good' ELSE 'Not a good match' END AS result
- FROM SpDates``
+``SELECT gender, CASE WHEN score > 10 THEN 'Good' ELSE 'Not a good match' END AS result FROM SpDates`` {{6}}
 
 
 `@part3`
@@ -150,7 +143,31 @@ SELECT DISTINCT is used to return only distinct (different) values.
 
 
 ---
-## Daily Happiness & Employee Turnover
+## Speed Dating Experiment - Am I dateable?
+
+```yaml
+type: "TwoRowsWideBottom"
+key: "7f5fb0a711"
+```
+
+`@part1`
+_ How many data professionals are there in the speed dating experiment? _
+
+
+`@part2`
+SELECT
+
+
+`@part3`
+As a female Data Scientist aged 35, am I dateable?
+
+
+`@script`
+
+
+
+---
+## Daily Happiness & Employee Turnover - JOIN tables
 
 ```yaml
 type: "TwoRowsWideTop"
