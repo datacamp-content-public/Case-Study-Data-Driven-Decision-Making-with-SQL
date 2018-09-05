@@ -38,11 +38,11 @@ What you have learned: {{1}}
 
 
 `@part2`
-What video games sold in year 2006 worldwide? {{4}}
+_What video games sold in year 2006 worldwide?_ {{4}}
 
 
 `@part3`
-Sample {{5}}
+Sample SQL Queries {{5}}
 
 ``SELECT * FROM Sales WHERE Year = 2006`` {{6}}
 
@@ -50,13 +50,13 @@ Sample {{5}}
 
 
 `@script`
-The first case study was to interrogate the Sales table in the Video Games Sales database. Your job was to analyse sales trend as well as to summarise sales by regions group by publisher and year.
+The first case study you built your first SQL query using Video Games Sales database. Your job was to accessing and interrogating the Sales table within the database. Your job was to analyse sales trend.
 
 You learned: 
 
-Basic understanding of relational database components such as tables, column, rows and keys
+Basic understanding of relational database components such as tables, columns, rows and keys
 
-Then, you learned to apply SELECT...FROM...WHERE statement to initially explore the data.
+Then, you learned to apply SELECT...FROM...WHERE statement to initially explore the data in the table.
 
 
 ---
@@ -68,7 +68,9 @@ key: "72edb8fdcd"
 ```
 
 `@part1`
-- Summarising data using SUM, AVERAGE, MIN and MAX {{1}}
+What you have learned: {{1}}
+
+- Summarising data using aggregated functions such as SUM and AVG {{2}}
 
 - Difference between WHERE and  HAVING when applying conditions in a SQL statement {{2}}
 
@@ -76,15 +78,19 @@ key: "72edb8fdcd"
 `@part2`
 > What’s the total sales? {{3}}
 
+> What’s the average sales? {{3}}
+
 
 `@part3`
-- ``SUM`` Total sales by product category {{4}}
-- ``AVG`` Average sales by product category {{5}}
+- ``SELECT SUM(Global_Sales) AS TotalSales from Sales``{{4}}
+- ``SELECT AVG(Global_Sales) AS AvgSales from Sales`` {{5}}
 - ``MIN`` & ``MAX`` – Discover products with lowest and highest price per unit {{6}}
 
 
 `@script`
-Now that you learned about building a basic SQL SELECT statement, you found a way to improve this query by applying aggregated functions
+You continued to practise your knowledge on SELECT statements and putting summarising functions. Furthermore we explored the use case of WHERE clause and HAVING. 
+
+The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
 
 The functions showed on the right were used to summarize numeric type of columns.
 
