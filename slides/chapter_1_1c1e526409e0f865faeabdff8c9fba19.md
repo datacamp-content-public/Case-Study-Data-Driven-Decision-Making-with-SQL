@@ -50,7 +50,7 @@ Sample SQL Queries {{5}}
 
 
 `@script`
-In the first case study, you built your first SQL query using Video Games Sales database. Your job was to accessing and interrogating data from the Sales table. Your aim was to analyse sales trend.
+In the first case study, you built your first SQL query using Video Game Sales database. Your job was to accessing and interrogating data from the Sales table. Your aim was to analyse sales trend.
 
 What you have learned:
 
@@ -90,7 +90,7 @@ _What’s the average sales?_ {{3}}
 
 
 `@script`
-You practised your knowledge on SELECT statements and putting summarising functions. Furthermore we explored the use case of WHERE clause and HAVING. 
+You applied summarising functions to SELECT statements in practice. Furthermore we explored the use case of WHERE clause and HAVING clause. 
 
 The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
 
@@ -137,9 +137,9 @@ Code Samples {{2}}
 
 
 `@script`
-For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School professors Ray Fisman and Sheena Iyengar for their paper Gender Differences in Mate Selection: Evidence From a Speed Dating Experiment. 
+For the second case study, we talked about love....or was it attraction? Using a data published on Kaggle which was compiled by Columbia Business School called Evidence From a Speed Dating Experiment. 
 
-What you have learned to:
+What you have learned:
  
 Applying the use of SELECT DISTINCT to return only distinct (different) values.
 
@@ -318,6 +318,10 @@ Explored the database to answer following questions; {{1}}
 
 `@script`
 You discovered that the database could answer the following questions
+
+When is the happiest day to be at work?
+
+How many negative votes before they get fired?
 
 
 ---
