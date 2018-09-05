@@ -177,19 +177,21 @@ key: "91a89ca986"
 ```
 
 `@part1`
-What you have learned: {{1}}
+What you have learned: 
 
-- A JOIN clause is used to combine rows from two or more tables, based on a related column between them {{2}}
+- A JOIN clause is used to combine rows from two or more tables, based on a related column between them
 
-- Difference types of JOINS - INNER JOIN, LEFT JOIN, RIGHT JOIN and so on {{3}}
+- Use INNER JOIN when you need only rows that match on both side
 
-- Combining result sets with UNION and UNION ALL {{4}}
-
-- JOIN vs UNION {{5}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.21.50.png?raw=true) {{3}}
 
 
 `@part2`
+**Sample code ** 
 
+``SELECT dept.staffid, dept.office, workers.gender, workers.age 
+FROM workers INNER JOIN dept on workers.staffid 
+= dept.staffid``
 
 
 `@part3`
