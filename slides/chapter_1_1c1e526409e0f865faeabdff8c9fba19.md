@@ -141,6 +141,8 @@ For the second case study, we talked about love....or was it attraction? Using a
  
 SELECT DISTINCT is used to return only distinct (different) values.
 
+So you discovered that there was a specific pattern demographic profile in this experiment?
+
 
 ---
 ## Speed Dating Experiment - Am I dateable?
