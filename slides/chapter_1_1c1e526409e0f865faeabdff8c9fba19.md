@@ -145,7 +145,7 @@ So you discovered that there was a specific pattern demographic profile in this 
 
 
 ---
-## Am I date-able?
+## Are you date-able?
 
 ```yaml
 type: "TwoRowsWideBottom"
@@ -153,15 +153,27 @@ key: "7f5fb0a711"
 ```
 
 `@part1`
-_ How many data professionals are there in the speed dating experiment? _
+Exploring ``SpDates`` table in the database to answer following questions; {{1}}
+
+- How many scientists are there in the speed dating experiment? {{2}}
+
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist'``  {{3}}
+
+- Sort the result set by age of participants {{4}}
+
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' order by age`` {{5}}
+ 
+- Was the result successful (perfect matched!)? {{6}}
+
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1`` {{7}}
 
 
 `@part2`
-SELECT
+
 
 
 `@part3`
-As a female Data Scientist aged 35, am I dateable?
+
 
 
 `@script`
@@ -207,7 +219,7 @@ Let’s review our data scheme here
 
 
 ---
-## Insert title here...
+## Daily Happiness & Employee Turnover - LEFT JOIN
 
 ```yaml
 type: "TwoColumns"
@@ -241,7 +253,7 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 ---
-## Insert title here...
+## Daily Happiness & Employee Turnover - RIGHT JOIN
 
 ```yaml
 type: "TwoColumns"
@@ -263,7 +275,7 @@ FROM workers INNER JOIN dept on workers.staffid
 
 
 `@script`
-
+Many more JOINS
 
 
 ---
