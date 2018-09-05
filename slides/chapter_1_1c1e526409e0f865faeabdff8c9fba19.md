@@ -161,7 +161,7 @@ key: "7f5fb0a711"
 `@part1`
 Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
-- How many scientists are there in the speed dating experiment? {{2}}
+- How many scientist profession are there in the speed dating experiment? {{2}}
 
 ``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist'``  {{3}}
 
@@ -183,7 +183,13 @@ Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
 
 `@script`
-So, after exploring the table,
+So, Exploring ``SpDates`` table in the database to answer following questions;
+
+How many scientist profession are there in the speed dating experiment?
+
+Next, you improved the statement by adding ORDER BY to sort the result set by age
+
+Finally, you discover the number of participants who would like to see their date again using this query.
 
 
 ---
