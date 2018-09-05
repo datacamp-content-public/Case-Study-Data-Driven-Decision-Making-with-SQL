@@ -74,7 +74,7 @@ What you have learned: {{1}}
 
 - Summarising data using aggregated functions such as SUM and AVG {{2}}
 
-- Difference between WHERE and  HAVING when applying conditions in a SQL statement {{2}}
+- Difference between WHERE clause and HAVING clause when applying conditions in a SQL statement {{2}}
 
 
 `@part2`
@@ -90,13 +90,16 @@ _What’s the average sales?_ {{3}}
 
 
 `@script`
-You applied summarising functions to SELECT statements in practice. Furthermore we explored the use case of WHERE clause and HAVING clause. 
+Furthermore you explored the use case of summarising data using aggregated functions such as SUM and AVG
 
-The HAVING clause was added to SQL because the WHERE keyword could not be used with aggregate functions.
+Then you learned about difference between WHERE clause and HAVING clause when applying conditions in a SQL statement {{2}}
+T
+he HAVING clause was added to SQL because the WHERE keyword could not be used with aggregated functions.
 
-The functions showed on the right were used to summarise numeric type of columns.
+You were able to answer key questions like 
 
-You were able to answer key questions like what’s the total sales to date.
+What’s the total sales to date.
+What’s the average sales?
 
 
 ---
