@@ -307,9 +307,9 @@ Explored the database to answer following questions; {{1}}
 
 ``SELECT date.dayofweek, SUM(votes.likes) AS allvotes FROM dates INNER JOIN votes WHERE votes.date = dates.date GROUP BY date.dayofweek``  {{3}}
  
-- How many negative votes before they get fired? {{6}}
+- How many negative votes before they get fired? {{4}}
 
-``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1`` {{7}}
+``SELECT COUNT(votes.date) AS cnt, churn.employee from votes INNER JOIN churn on votes.employee = churn.employee WHERE churn.stillExisted = FALSE GROUP BY churn.employee HAVING votes.vote >0`` {{5}}
 
 
 `@part2`
