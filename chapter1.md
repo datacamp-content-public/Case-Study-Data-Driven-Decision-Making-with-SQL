@@ -35,28 +35,21 @@ Do some data science.
 
 
 `@pre_exercise_code`
-
 ```{python}
 
 ```
 
-
 `@sample_code`
-
 ```{sql}
 SELECT * FROM
 ```
 
-
 `@solution`
-
 ```{sql}
 
 ```
 
-
 `@sct`
-
 ```{python}
 
 ```
