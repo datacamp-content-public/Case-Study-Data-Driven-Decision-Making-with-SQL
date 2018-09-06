@@ -117,7 +117,7 @@ What you have learned: {{1}}
 
 - Apply ORDER BY to sort result set {{3}}
 
-- Include / exclude missing values by applying IS NULL {{4}}
+- Explore missing values by applying IS NULL {{4}}
 
 - Calculate columns using CASE WHEN {{5}}
 
@@ -140,7 +140,7 @@ Code Samples {{2}}
 
 
 `@script`
-For the second case study, we talked about Evidence from a Speed Dating Experiment database published on the Kaggle website which was compiled by Columbia Business School.
+For the second case study, we used Speed Dating Experiment database.
  
 You applied the use of SELECT DISTINCT to return only distinct (different) values.
 
@@ -206,7 +206,7 @@ What you have learned:
 
 - A JOIN clause is used to combine rows from two or more tables, based on a related column between them
 
-- Use INNER JOIN when you need only rows that match on both side
+- Many types of joins such as INNER JOIN, LEFT JOIN and RIGHT JOIN
 
 
 `@part2`
@@ -224,9 +224,7 @@ So in this chapter you have learned
 
 - Concept of JOIN clause, it is used to combine rows from two or more tables, based on a related column between them. There are many types of joins
 
-First,
-
-Use INNER JOIN when you need only rows that match on both side
+There are many types of joins such as INNER JOIN, LEFT JOIN and RIGHT JOIN
 
 
 ---
@@ -251,54 +249,6 @@ FROM workers INNER JOIN dept on workers.staffid
 
 `@script`
 You have examined the sample code right here which would give you the result set as per the screenshot here. Noticed that the INNER JOIN returned two rows that shared the common key "staffid" as highlighted in yellow.
-
-
----
-## Daily Happiness & Employee Turnover - LEFT JOIN
-
-```yaml
-type: "TwoRows"
-key: "637ce7236e"
-```
-
-`@part1`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true)
-
-
-`@part2`
-**Sample code ** 
-
-``SELECT dept.staffid, dept.office, workers.gender, workers.age 
-FROM workers INNER JOIN dept on workers.staffid 
-= dept.staffid``
-
-
-`@script`
-Next, you have learned the use case of LEFT JOIN to get optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the LEFT JOIN returned four rows from the left table and showed the information from the right table where common key were shared - which was "staffid" as highlighted in yellow.
-
-
----
-## Daily Happiness & Employee Turnover - RIGHT JOIN
-
-```yaml
-type: "TwoRows"
-key: "d470cf6714"
-```
-
-`@part1`
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true)
-
-
-`@part2`
-**Sample code ** 
-
-``SELECT dept.staffid, dept.office, workers.gender, workers.age 
-FROM workers RIGHT JOIN dept on workers.staffid 
-= dept.staffid``
-
-
-`@script`
-The same goes with RIGHT JOIN, it gave the optional values from another table(s) by using the sample code here, it gave you the result set as per the screenshot here. Noticed that the RIGHT JOIN returned four rows from the right table and showed the information from the left table where common key were shared - which was "staffid" as highlighted in yellow.
 
 
 ---
