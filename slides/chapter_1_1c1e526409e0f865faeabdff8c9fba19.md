@@ -34,7 +34,7 @@ key: "d7b537ab21"
 What you have learned: {{1}}
 
 - Basic understanding of relational database components such as tables, columns, rows and keys {{2}}
-- Basic SQL query using 3 keywords SELECT...FROM...WHERE {{3}}
+- Built a SQL query using 3 keywords SELECT...FROM...WHERE {{3}}
 
 
 `@part2`
@@ -44,19 +44,19 @@ _What video games sold in year 2006 worldwide?_ {{4}}
 `@part3`
 Sample SQL Queries {{5}}
 
-``SELECT * FROM Sales WHERE Year = 2006`` {{6}}
+``SELECT * FROM Sales WHERE Year = 2006;`` {{6}}
 
- ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006`` {{7}}
+ ``SELECT Year, Publisher, Revenue FROM Sales WHERE Year = 2006;`` {{7}}
 
 
 `@script`
-In the first case study, you built your first SQL query using Video Game Sales database. Your job was to accessing and interrogating data from the Sales table. Your aim was to analyse sales trend.
+In the first case study, you built your first SQL query using Video Game Sales database. 
 
 What you have learned:
 
 Basic understanding of relational database components such as tables, columns, rows and keys
 
-Then, you learned to apply SELECT...FROM...WHERE statement which is a basis of a simple SQL query to initially explore the data in the table.
+To initially explore the data in the table, you built a SQL query using 3 keywords SELECT...FROM...WHERE statement which is a basis of a simple SQL query.
 
 You were able to answer a question  "What video games sold in year 2006 worldwide?" by using these sample queries here.
 
@@ -80,13 +80,13 @@ What you have learned: {{1}}
 `@part2`
 _What’s the total sales?_ {{3}}
 
-``SELECT SUM(Global_Sales) AS TotalSales from Sales``{{4}}
+``SELECT SUM(Global_Sales) AS TotalSales from Sales;``{{4}}
 
 
 `@part3`
 _What’s the average sales?_ {{3}}
 
-``SELECT AVG(Global_Sales) AS AvgSales from Sales`` {{5}}
+``SELECT AVG(Global_Sales) AS AvgSales from Sales;`` {{5}}
 
 
 `@script`
@@ -98,8 +98,8 @@ The HAVING clause was added to SQL because the WHERE keyword could not be used w
 
 You were able to answer key questions like 
 
-What’s the total sales to date?
-What’s the average sales overall?
+What’s the total sales to date? by practising the use of SUM function
+What’s the average sales overall? by practising the use of AVG function
 
 
 ---
@@ -125,14 +125,14 @@ What you have learned: {{1}}
 `@part2`
 Code Samples {{2}}
 
-``SELECT DISTINCT career FROM SpDates`` {{2}}
+``SELECT DISTINCT career FROM SpDates;`` {{2}}
 
-``SELECT career, age, score FROM SpDates ORDER BY age`` {{3}}
+``SELECT career, age, score FROM SpDates ORDER BY age;`` {{3}}
 
-``SELECT * FROM SpDates WHERE race IS NULL`` {{4}}
+``SELECT * FROM SpDates WHERE race IS NULL;`` {{4}}
 
 
-``SELECT gender, CASE WHEN score > 10 THEN 'Good' ELSE 'Not a good match' END AS result FROM SpDates`` {{6}}
+``SELECT gender, CASE WHEN score > 10 THEN 'Good' ELSE 'Not a good match' END AS result FROM SpDates;`` {{6}}
 
 
 `@part3`
@@ -164,15 +164,15 @@ Exploring ``SpDates`` table in the database to answer following questions; {{1}}
 
 - How many scientist profession are there in the speed dating experiment? {{2}}
 
-``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist'``  {{3}}
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist';``  {{3}}
 
 - Sort the result set by age of participants {{4}}
 
-``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' order by age`` {{5}}
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' order by age;`` {{5}}
  
 - How many would like to see their date again? {{6}}
 
-``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1`` {{7}}
+``SELECT id, age, gender FROM SpDates WHERE career = 'Scientist' AND matched = 1;`` {{7}}
 
 
 `@part2`
@@ -208,15 +208,9 @@ What you have learned:
 
 - Use INNER JOIN when you need only rows that match on both side
 
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.21.50.png?raw=true) {{3}}
-
 
 `@part2`
-**Sample code ** 
 
-``SELECT dept.staffid, dept.office, workers.gender, workers.age 
-FROM workers INNER JOIN dept on workers.staffid 
-= dept.staffid``
 
 
 `@part3`
@@ -234,6 +228,28 @@ First,
 
 Use INNER JOIN when you need only rows that match on both side
 
+
+---
+## Daily Happiness & Employee Turnover - INNER JOIN
+
+```yaml
+type: "TwoRows"
+key: "795c3a17ea"
+```
+
+`@part1`
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.21.50.png?raw=true)
+
+
+`@part2`
+**Sample code ** 
+
+``SELECT dept.staffid, dept.office, workers.gender, workers.age 
+FROM workers INNER JOIN dept on workers.staffid 
+= dept.staffid``
+
+
+`@script`
 You have examined the sample code right here which would give you the result set as per the screenshot here. Noticed that the INNER JOIN returned two rows that shared the common key "staffid" as highlighted in yellow.
 
 
@@ -241,22 +257,16 @@ You have examined the sample code right here which would give you the result set
 ## Daily Happiness & Employee Turnover - LEFT JOIN
 
 ```yaml
-type: "TwoColumns"
-key: "616164b2a4"
+type: "TwoRows"
+key: "637ce7236e"
 ```
 
 `@part1`
-What you have learned: 
-
-- Use LEFT JOIN to get optional values from another table(s)
-
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true) {{3}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.27.42.png?raw=true)
 
 
 `@part2`
 **Sample code ** 
-
-For LEFT JOIN
 
 ``SELECT dept.staffid, dept.office, workers.gender, workers.age 
 FROM workers INNER JOIN dept on workers.staffid 
@@ -271,21 +281,19 @@ Next, you have learned the use case of LEFT JOIN to get optional values from ano
 ## Daily Happiness & Employee Turnover - RIGHT JOIN
 
 ```yaml
-type: "TwoColumns"
-key: "a02b6e3813"
+type: "TwoRows"
+key: "d470cf6714"
 ```
 
 `@part1`
-- Same with RIGHT JOIN
-
-![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true) {{3}}
+![](https://github.com/nujcharee/courses/blob/master/Screen%20Shot%202018-09-05%20at%2018.24.59.png?raw=true)
 
 
 `@part2`
 **Sample code ** 
 
 ``SELECT dept.staffid, dept.office, workers.gender, workers.age 
-FROM workers INNER JOIN dept on workers.staffid 
+FROM workers RIGHT JOIN dept on workers.staffid 
 = dept.staffid``
 
 

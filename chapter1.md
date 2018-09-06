@@ -3,19 +3,30 @@ title: 'Template Chapter 1'
 description: 'This is a template chapter.'
 ---
 
+## Case Study: Data Driven Decision Making with SQL
+
+```yaml
+type: VideoExercise
+key: ba54eb3e52
+xp: 50
+```
+
+`@projector_key`
+1c1e526409e0f865faeabdff8c9fba19
+
+---
+
 ## Ex 1.1
 
 ```yaml
-type: NormalExercise 
+type: NormalExercise
+key: 4629420721
 lang: sql
-xp: 100 
+xp: 100
 skills: 1
-key: 4629420721   
 ```
 
-
 Do some data science.
-
 
 `@instructions`
 
@@ -49,17 +60,3 @@ SELECT * FROM
 ```{python}
 
 ```
-
-
----
-
-## Case Study: Data Driven Decision Making with SQL
-
-```yaml
-type: VideoExercise 
-xp: 50 
-key: ba54eb3e52   
-```
-
-`@projector_key`
-1c1e526409e0f865faeabdff8c9fba19
